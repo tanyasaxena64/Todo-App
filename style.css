@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg, #fca13a, #e90ea0);
+    font-family: 'Dancing Script', cursive !important;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+header {
+    font-size: 1.5rem;
+}
+
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,
+form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+
+form button {
+    color: #d88771;
+    background: white;
+    cursor: pointer;
+    transition: all 0, 3s ease;
+}
+
+form button:hover {
+    background: #d88771;
+    color: white;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-List {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    padding-left: 30px;
+    min-width: 35vw;
+    max-width: 35vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+    background: #111110;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.todo-item {
+    padding: 10px !important;
+}
+
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        display: flex;
+        justify-content: center;
+        width: 16vw;
+    }
+    .todo-input {
+        width: 80vw;
+        margin-left: 57vw;
+    }
+    .todo {
+        min-width: 80vw;
+        max-width: 80vw;
+    }
+    header {
+        font-size: 1.1rem;
+    }
+}
